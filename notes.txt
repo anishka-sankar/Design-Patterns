@@ -1,0 +1,46 @@
+Design Patterns 
+
+Provides solutions for common problems while building a software.
+The code can be re-used and understandable while designing using this patterns.
+
+Creational Design Pattern 
+
+-Singleton (Runtime class in Java.lang.Runtime) 
+  To restrict a class from creating more than 1 instance.
+-Factory (getConnection() method in java.sql.DriverManager, ForName() method in Java.lang.class) 
+  When object creation needs to be done based on the input from the user. A Factory class is used to add layer of abstraction and to separate object creation from client side.
+-Abstract Factory (newInstance() from  javax.xml.parsersDocumentBulilderFactory) 
+  It adds another layer of abstraction in a factory class. Factory of factories.
+-Builder(append() from java.lang.StringBuilder and StringBuffer, builder used in streams)
+  When object creation is complex/includes lot of parameters to be passed in a constructor. A step by step process is followed to avoid complexity. For mandatory fields a constructor is created and for optional one a inner class with another constructor and builder method is used.   
+-Prototype(clone() method from java.lang.Object) 
+  When Object creation is costly or consumes more time. We can clone the data from the existing object created and then modify it accordingly.
+
+==============================================================
+
+Structural Design pattern 
+
+-Adapter (asList() method in Java.util.Arrays) 
+ The class acts as an adapter between 2 incompatible interfaces.
+-Bridge   
+ When we have interface hierarchies in both interfaces as well as implementation. Then bridge pattern is used to decouple interfaces from implementaton so that both can vary independently. Used to decouple abstraction from an implementation . Composition is preferred than inheritance.
+Composite 
+Decorator
+Facade
+Flyweight
+Proxy 
+
+==============================================================
+
+Behavioral Design pattern 
+
+Chain of Responsibility
+Iterator 
+Strategy 
+Observer 
+
+
+
+
+
+
